@@ -1,15 +1,9 @@
 {
-  "name": "tailwind-playlist",
-  "version": "1.0.0",
-  "description": "Tailwind CSS Playlist lessons by Learn with Sumit",
-  "main": "index.js",
-  "scripts": {
-    "build": "tailwindcss -i ./src/tailwind.css -o ./output/tailwind.css -w"
-  },
-  "keywords": [],
-  "author": "Learn with Sumit",
-  "license": "ISC",
   "devDependencies": {
-    "tailwindcss": "^2.2.17"
+    "daisyui": "^4.4.19",
+    "tailwindcss": "^3.3.5"
+  },
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   }
 }
