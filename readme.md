@@ -8,7 +8,7 @@
 Run the following commands in terminal. Keep the terminal as it is.
 ```bash
 npm i
-mpm run build:css
+npm run build:css
 ```
 # Instructions
 
