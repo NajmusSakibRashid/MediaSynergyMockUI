@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home Page</title>
+  <title>Dashboard</title>
   <link href="/dist/output.css" rel="stylesheet">
 </head>
 <body data-theme="light">
@@ -44,13 +44,19 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
           </div>
-          <div class="card w-full bg-base-100 shadow-xl p-4">
-            Recent
-            <ul style="list-style-image:url('./img/checkmark.png')" class="list-inside">
+          <div class="card w-full bg-base-100 shadow-xl">
+            <div class="card-title p-4 pb-0">Recent</div>
+            <ul style="list-style-image:url('./img/checkmark.png')" class="list-inside p-4">
               <li>Lorem Ipsum</li>
               <li>dolor sit amet,</li>
               <li>Consectetur adipiscing</li>
             </ul>
+            <div class="border-solid border-b-2"></div>
+            <div class="card-title p-4 pb-0">Group Activities</div>
+            <ul style="list-style-image:url('./img/checkmark.png')" class="list-inside p-4">
+              <li>Lorem Ipsum</li>
+              <li>dolor sit amet,</li>
+              <li>Consectetur adipiscing</li>
           </div>
         </div>
         <div class="mid h-full w-full basis-8/12">
@@ -441,7 +447,84 @@
             </div>
           </div>
         </div>
-        <div class="right bg-blue-700 h-full w-full basis-2/12">Hello Right</div>
+        <div class="right h-full w-full basis-2/12 p-4">
+          <div class="card shadow-xl w-full">
+            <div class="card-title p-4">Upcoming Contents</div>
+            <ul style="list-style-image:url('./img/checkmark.png')" class="list-inside p-4">
+              <li class="link link-primary link-hover">Lorem Ipsum</li>
+              <li class="link link-primary link-hover">dolor sit amet,</li>
+              <li class="link link-primary link-hover">Consectetur adipiscing</li>
+          </div>
+          <div class="stats shadow-xl mt-4 stats-vertical">
+            <div class="stat-title">Statistics</div>
+  
+            <div class="stat">
+              <div class="stat-figure text-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+              </div>
+              <div class="stat-title">Total Likes</div>
+              <div class="stat-value text-primary">25.6K</div>
+              <div class="stat-desc">21% more than last month</div>
+            </div>
+            
+            <div class="stat">
+              <div class="stat-figure text-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+              </div>
+              <div class="stat-title">Page Views</div>
+              <div class="stat-value text-secondary">2.6M</div>
+              <div class="stat-desc">21% more than last month</div>
+            </div>
+            
+            <div class="stat">
+              <div class="stat-figure text-secondary">
+                <div class="avatar online">
+                  <div class="w-16 rounded-full">
+                    <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                  </div>
+                </div>
+              </div>
+              <div class="stat-value">86%</div>
+              <div class="stat-title">Tasks done</div>
+              <div class="stat-desc text-secondary">31 tasks remaining</div>
+            </div>
+          </div>
+          <div class="stats shadow-xl mt-4 stats-vertical">
+            <div class="stat-title">Statistics</div>
+  
+            <div class="stat">
+              <div class="stat-figure text-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+              </div>
+              <div class="stat-title">Total Likes</div>
+              <div class="stat-value text-primary">25.6K</div>
+              <div class="stat-desc">21% more than last month</div>
+            </div>
+            
+            <div class="stat">
+              <div class="stat-figure text-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+              </div>
+              <div class="stat-title">Page Views</div>
+              <div class="stat-value text-secondary">2.6M</div>
+              <div class="stat-desc">21% more than last month</div>
+            </div>
+            
+            <div class="stat">
+              <div class="stat-figure text-secondary">
+                <div class="avatar online">
+                  <div class="w-16 rounded-full">
+                    <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                  </div>
+                </div>
+              </div>
+              <div class="stat-value">86%</div>
+              <div class="stat-title">Tasks done</div>
+              <div class="stat-desc text-secondary">31 tasks remaining</div>
+            </div>
+            
+          </div>
+        </div>
       </div>
     </div> 
     <div class="drawer-side">
@@ -452,6 +535,7 @@
         <li><a>Content</a></li>
         <li><a>Scheduling</a></li>
         <li><a>Analytics</a></li>
+        <li><a>Community</a></li>
       </ul>
     </div>
   </div>
