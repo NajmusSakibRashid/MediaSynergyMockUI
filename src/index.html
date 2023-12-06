@@ -36,7 +36,23 @@
       </div>
       <!-- Make the following div a flex box -->
       <div class="flex mt-16">
-        <div class="p-10 left bg-red-700 h-full w-full basis-2/12">Hello left</div>
+        <div class="left h-full w-full basis-2/12 p-4 grid grid-cols-1 gap-4">
+          <div class="card w-full bg-base-100 shadow-xl">
+            <figure><img src="https://www.bsn.eu/wp-content/uploads/2016/12/user-icon-image-placeholder.jpg" alt="Shoes" class="h-20"/></figure>
+            <div class="p-4">
+              <h2 class="card-title">User</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="card w-full bg-base-100 shadow-xl p-4">
+            Recent
+            <ul style="list-style-image:url('./img/checkmark.png')" class="list-inside">
+              <li>Lorem Ipsum</li>
+              <li>dolor sit amet,</li>
+              <li>Consectetur adipiscing</li>
+            </ul>
+          </div>
+        </div>
         <div class="mid h-full w-full basis-8/12">
           <div class="collapse collapse-arrow bg-base-200 rounded-none">
             <input type="radio" name="my-accordion-2" checked="checked" /> 
@@ -52,7 +68,7 @@
                   <h2 class="card-title">Lorem ipsum dolor</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                   <div class="card-actions">
-                    <button class="btn btn-primary" onclick="window.location.href='profile.html'">Visit Profile</button>
+                    <button class="btn btn-primary" onclick="window.location.href='pages/profile.html'">Visit Profile</button>
                   </div>
                 </div>
               </div>
