@@ -40,14 +40,17 @@
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Plus_font_awesome.svg/1200px-Plus_font_awesome.svg.png" alt="Shoes" class="h-full rounded-xl" />
             Create Content
           </div>
-          <input type="text" class="input input-accent p-4" placeholder="Search Content">
+          <div class="join">
+            <input type="text" class="input input-accent p-4 join-item w-full" placeholder="Search Content">
+            <button class="btn btn-accent join-item">Search</button>
+          </div>
           <div class="grid grid-cols-2 gap-4">
             <div class="card shadow-xl bg-base-100 items-center p-4">
               <img src="https://static-00.iconduck.com/assets.00/fast-food-illustration-2048x1469-7bth2szr.png" alt="" class="w-full">
               <div class="card-title">Lorem Ipsum</div>
               <div class="card-body p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</div>
               <div class="card-actions whitespace-nowrap">
-                <button class="btn btn-accent w-full btn-sm">Schedule</button>
+                <button class="btn btn-accent w-full btn-sm" onclick="document.getElementById('scheduling-form').style.display='block'">Schedule</button>
                 <button class="btn btn-accent w-full btn-sm">Modify</button>
               </div>
             </div>
@@ -102,7 +105,7 @@
             <div class="border-solid border-l-2 h-48 relative"></div>
             <div class="border-solid border-l-2 h-48 relative"></div>
             <div class="border-solid border-l-2 h-48 relative">
-              <div class="absolute top-0 left-full card items-center shadow-xl w-32 bg-base-300">
+              <div class="absolute top-0 left-0 card items-center shadow-xl w-32 bg-base-300">
                 <div class="avatar absolute -top-4 -left-4 z-10">
                   <div class="w-8 rounded-full">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png" alt="">
@@ -111,6 +114,7 @@
                 <img src="https://png.pngtree.com/thumb_back/fw800/background/20220506/pngtree-datacenter-equipment-personnel-isometric-flowchart-with-generator-server-hardware-maintenance-administration-image_1290909.jpg" alt="">
                 <div class="card-title">Lorem Ipsum</div>
                 <div class="badge badge-outline">Scheduled</div>
+                <div class="btn btn-primary btn-xs m-2" onclick="document.getElementById('more-schedules').style.display='grid'">+ 3 more</div>
               </div>
             </div>
             <div class="border-solid border-l-2 h-48 relative"></div>
@@ -119,7 +123,7 @@
             <div class="border-solid border-l-2 h-48 relative"></div>
             <div class="border-solid border-l-2 h-48 relative"></div>
             <div class="border-solid border-l-2 h-48 relative">
-              <div class="absolute top-0 left-full card items-center shadow-xl w-32 bg-base-300">
+              <div class="absolute top-0 left-0 card items-center shadow-xl w-32 bg-base-300">
                 <div class="avatar absolute -top-4 -left-4 z-10">
                   <div class="w-8 rounded-full">
                     <img src="https://e7.pngegg.com/pngimages/421/879/png-clipart-twitter-logo-social-media-iphone-organization-logo-twitter-computer-network-leaf.png" alt="">
@@ -140,7 +144,7 @@
             <div class="border-solid border-l-2 h-48 relative"></div>
             <div class="border-solid border-l-2 h-48 relative"></div>
             <div class="border-solid border-l-2 h-48 relative">
-              <div class="absolute top-0 left-full card items-center shadow-xl w-32 bg-base-300">
+              <div class="absolute top-0 left-0 card items-center shadow-xl w-32 bg-base-300">
                 <div class="avatar absolute -top-4 -left-4 z-10">
                   <div class="w-8 rounded-full">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/800px-LinkedIn_icon_circle.svg.png" alt="">
@@ -162,7 +166,7 @@
             <div class="border-solid border-l-2 h-48 relative"></div>
             <div class="border-solid border-l-2 h-48 relative"></div>
             <div class="border-solid border-l-2 h-48 relative">
-              <div class="absolute top-0 left-full card items-center shadow-xl w-32 bg-base-300">
+              <div class="absolute top-0 left-0 card items-center shadow-xl w-32 bg-base-300">
                 <div class="avatar absolute -top-4 -left-4 z-10">
                   <div class="w-8 rounded-full">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png" alt="">
@@ -183,7 +187,7 @@
             <div class="border-solid border-l-2 h-48 relative"></div>
             <div class="border-solid border-l-2 h-48 relative"></div>
             <div class="border-solid border-l-2 h-48 relative">
-              <div class="absolute top-0 left-full card items-center shadow-xl w-32 bg-base-300">
+              <div class="absolute top-0 left-0 card items-center shadow-xl w-32 bg-base-300">
                 <div class="avatar absolute -top-4 -left-4 z-10">
                   <div class="w-8 rounded-full">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/800px-LinkedIn_icon_circle.svg.png" alt="">
@@ -208,7 +212,7 @@
             <div class="border-solid border-l-2 h-48 relative"></div>
             <div class="border-solid border-l-2 h-48 relative"></div>
             <div class="border-solid border-l-2 h-48 relative">
-              <div class="absolute top-0 left-full card items-center shadow-xl w-32 bg-base-300">
+              <div class="absolute top-0 left-0 card items-center shadow-xl w-32 bg-base-300">
                 <div class="avatar absolute -top-4 -left-4 z-10">
                   <div class="w-8 rounded-full">
                     <img src="https://e7.pngegg.com/pngimages/421/879/png-clipart-twitter-logo-social-media-iphone-organization-logo-twitter-computer-network-leaf.png" alt="">
@@ -236,7 +240,7 @@
             <div class="border-solid border-l-2 h-48 relative"></div>
             <div class="border-solid border-l-2 h-48 relative"></div>
             <div class="border-solid border-l-2 h-48 relative">
-              <div class="absolute top-0 left-full card items-center shadow-xl w-32 bg-base-300">
+              <div class="absolute top-0 left-0 card items-center shadow-xl w-32 bg-base-300">
                 <div class="avatar absolute -top-4 -left-4 z-10">
                   <div class="w-8 rounded-full">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png" alt="">
@@ -253,7 +257,7 @@
             <div class="sticky left-0">Tuesday</div>
             <div class="border-solid border-l-2 h-48 relative"></div>
             <div class="border-solid border-l-2 h-48 relative">
-              <div class="absolute top-0 left-full card items-center shadow-xl w-32 bg-base-300">
+              <div class="absolute top-0 left-0 card items-center shadow-xl w-32 bg-base-300">
                 <div class="avatar absolute -top-4 -left-4 z-10">
                   <div class="w-8 rounded-full">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/800px-LinkedIn_icon_circle.svg.png" alt="">
@@ -274,7 +278,7 @@
             <div class="border-solid border-l-2 h-48 relative"></div>
             <div class="border-solid border-l-2 h-48 relative"></div>
             <div class="border-solid border-l-2 h-48 relative">
-              <div class="absolute top-0 left-full card items-center shadow-xl w-32 bg-base-300">
+              <div class="absolute top-0 left-0 card items-center shadow-xl w-32 bg-base-300">
                 <div class="avatar absolute -top-4 -left-4 z-10">
                   <div class="w-8 rounded-full">
                     <img src="https://e7.pngegg.com/pngimages/421/879/png-clipart-twitter-logo-social-media-iphone-organization-logo-twitter-computer-network-leaf.png" alt="">
@@ -303,7 +307,7 @@
             <div class="border-solid border-l-2 h-48 relative"></div>
             <div class="border-solid border-l-2 h-48 relative"></div>
             <div class="border-solid border-l-2 h-48 relative">
-              <div class="absolute top-0 left-full card items-center shadow-xl w-32 bg-base-300">
+              <div class="absolute top-0 left-0 card items-center shadow-xl w-32 bg-base-300">
                 <div class="avatar absolute -top-4 -left-4 z-10">
                   <div class="w-8 rounded-full">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png" alt="">
@@ -322,7 +326,7 @@
             <div class="border-solid border-l-2 h-48 relative"></div>
             <div class="border-solid border-l-2 h-48 relative"></div>
             <div class="border-solid border-l-2 h-48 relative">
-              <div class="absolute top-0 left-full card items-center shadow-xl w-32 bg-base-300">
+              <div class="absolute top-0 left-0 card items-center shadow-xl w-32 bg-base-300">
                 <div class="avatar absolute -top-4 -left-4 z-10">
                   <div class="w-8 rounded-full">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/800px-LinkedIn_icon_circle.svg.png" alt="">
@@ -348,7 +352,7 @@
             <div class="border-solid border-l-2 h-48 relative"></div>
             <div class="border-solid border-l-2 h-48 relative"></div>
             <div class="border-solid border-l-2 h-48 relative">
-              <div class="absolute top-0 left-full card items-center shadow-xl w-32 bg-base-300">
+              <div class="absolute top-0 left-0 card items-center shadow-xl w-32 bg-base-300">
                 <div class="avatar absolute -top-4 -left-4 z-10">
                   <div class="w-8 rounded-full">
                     <img src="https://e7.pngegg.com/pngimages/421/879/png-clipart-twitter-logo-social-media-iphone-organization-logo-twitter-computer-network-leaf.png" alt="">
@@ -376,7 +380,7 @@
             <div class="border-solid border-l-2 h-48 relative"></div>
             <div class="border-solid border-l-2 h-48 relative"></div>
             <div class="border-solid border-l-2 h-48 relative">
-              <div class="absolute top-0 left-full card items-center shadow-xl w-32 bg-base-300">
+              <div class="absolute top-0 left-0 card items-center shadow-xl w-32 bg-base-300">
                 <div class="avatar absolute -top-4 -left-4 z-10">
                   <div class="w-8 rounded-full">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png" alt="">
@@ -393,7 +397,7 @@
             <div class="border-solid border-l-2 h-48 relative"></div>
             <div class="sticky left-0">Friday</div>
             <div class="border-solid border-l-2 h-48 relative">
-              <div class="absolute top-0 left-full card items-center shadow-xl w-32 bg-base-300">
+              <div class="absolute top-0 left-0 card items-center shadow-xl w-32 bg-base-300">
                 <div class="avatar absolute -top-4 -left-4 z-10">
                   <div class="w-8 rounded-full">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/800px-LinkedIn_icon_circle.svg.png" alt="">
@@ -427,6 +431,82 @@
             <div class="border-solid border-l-2 h-48 relative"></div>
             <div class="border-solid border-l-2 h-48 relative"></div>
             <div class="border-solid border-l-2 h-48 relative"></div>
+          </div>
+        </div>
+      </div>
+      <div id="scheduling-form" class="hidden bg-base-200 fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 rounded-xl p-4 max-h-screen overflow-scroll">
+        <div class="absolute right-0 top-0 p-1" onclick="document.getElementById('scheduling-form').style.display='none'">
+          <img src="https://icons.veryicon.com/png/o/miscellaneous/medium-thin-linear-icon/cross-23.png" alt="" class="w-4">
+        </div>
+        <div class="flex m-4">
+          <img src="https://static-00.iconduck.com/assets.00/fast-food-illustration-2048x1469-7bth2szr.png" alt="" class="w-64">
+          <div class="flex flex-col justify-center items-center p-4 gap-4">
+            <div class="card-title">Lorem Ipsum</div>
+            <div class="card-body p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</div>
+          </div>
+        </div>
+        <div class="menu-title">Select Social Media</div>
+        <div class="flex justify-between items-center m-4">
+          <input value="facebook" type="checkbox" class="checkbox checkbox-xl checkbox-primary">
+          <label for="facebook" ><img class="rounded-full w-8" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png" alt=""></label>
+          <input value="twitter" type="checkbox" class="checkbox checkbox-xl checkbox-primary">
+          <label for="twitter" ><img class="rounded-full w-8" src="https://logos-world.net/wp-content/uploads/2023/08/X-Logo.png" alt=""></label>
+          <input value="instagram" type="checkbox" class="checkbox checkbox-xl checkbox-primary">
+          <label for="instagram" ><img class="rounded-full w-8" src="https://img.freepik.com/premium-vector/instagram-vector-social-media-icon-instagram-logo-illustration_153454-525.jpg" alt=""></label>
+          <input value="youtube" type="checkbox" class="checkbox checkbox-xl checkbox-primary">
+          <label for="youtube" ><img class="rounded-full w-8" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/YouTube_social_white_square_%282017%29.svg/1200px-YouTube_social_white_square_%282017%29.svg.png" alt=""></label>
+          <input value="linkedin" type="checkbox" class="checkbox checkbox-xl checkbox-primary">
+          <label for="linkedin" ><img class="rounded-full w-8" src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw" alt=""></label>
+          <input value="tiktok" type="checkbox" class="checkbox checkbox-xl checkbox-primary">
+          <label for="tiktok" ><img class="rounded-full w-8" src="https://play-lh.googleusercontent.com/Ui_-OW6UJI147ySDX9guWWDiCPSq1vtxoC-xG17BU2FpU0Fi6qkWwuLdpddmT9fqrA=w240-h480-rw" alt=""></label>
+        </div>
+        <div class="menu-title">Select Schedule</div>
+        <div class="flex flex-col m-4">
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" class="input input-primary input-bordered">
+          <label for="time">Time:</label>
+          <input type="time" id="time" name="time" class="input input-primary input-bordered">
+          <label for="repeat">Repeat:</label>
+          <select name="repeat" id="repeat" class="select select-bordered select-primary w-full">
+            <option value="none">None</option>
+            <option value="daily">Daily</option>
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+          </select>
+        </div>
+        <div class="flex justify-center items-center m-4">
+          <button class="btn btn-primary">Schedule</button>
+        </div> 
+      </div>
+      <div id="more-schedules" class="hidden bg-base-200 fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 rounded-xl p-4 max-h-screen overflow-scroll grid-cols-3 gap-4">
+        <div class="absolute right-0 top-0 p-1" onclick="document.getElementById('more-schedules').style.display='none'">
+          <img src="https://icons.veryicon.com/png/o/miscellaneous/medium-thin-linear-icon/cross-23.png" alt="" class="w-4">
+        </div>
+        <div class="card shadow-xl w-full p-4">
+          <img src="https://static-00.iconduck.com/assets.00/fast-food-illustration-2048x1469-7bth2szr.png" alt="">
+          <div class="card-title">Lorem Ipsum</div>
+          <div class="card-body p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</div>
+          <div class="card-actions whitespace-nowrap">
+            <button class="btn btn-accent w-full btn-sm">Schedule</button>
+            <button class="btn btn-accent w-full btn-sm">Modify</button>
+          </div>
+        </div>
+        <div class="card shadow-xl w-full p-4">
+          <img src="https://png.pngtree.com/thumb_back/fw800/background/20220506/pngtree-datacenter-equipment-personnel-isometric-flowchart-with-generator-server-hardware-maintenance-administration-image_1290909.jpg" alt="">
+          <div class="card-title">Lorem Ipsum</div>
+          <div class="card-body p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</div>
+          <div class="card-actions whitespace-nowrap">
+            <button class="btn btn-accent w-full btn-sm">Schedule</button>
+            <button class="btn btn-accent w-full btn-sm">Modify</button>
+          </div>
+        </div>
+        <div class="card shadow-xl w-full p-4">
+          <img src="https://img.freepik.com/free-vector/hotel-building-concept-illustration_114360-12959.jpg" alt="">
+          <div class="card-title">Lorem Ipsum</div>
+          <div class="card-body p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</div>
+          <div class="card-actions whitespace-nowrap">
+            <button class="btn btn-accent w-full btn-sm">Schedule</button>
+            <button class="btn btn-accent w-full btn-sm">Modify</button>
           </div>
         </div>
       </div>
