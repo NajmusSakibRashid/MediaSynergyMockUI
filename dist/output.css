@@ -3638,6 +3638,10 @@ details.collapse summary::-webkit-details-marker {
   stroke: currentColor;
 }
 
+.p-10 {
+  padding: 2.5rem;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -3678,12 +3682,12 @@ details.collapse summary::-webkit-details-marker {
   line-height: 1.75rem;
 }
 
-.font-black {
-  font-weight: 900;
-}
-
 .font-bold {
   font-weight: 700;
+}
+
+.font-black {
+  font-weight: 900;
 }
 
 .font-medium {
