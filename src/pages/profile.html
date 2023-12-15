@@ -23,7 +23,7 @@
             </button>
         </div>
         <div class="flex-1">
-          <a class="mx-10 btn btn-ghost text-xl">MediaSynergy</a>
+          <a class="mx-10 btn btn-ghost text-xl" href="/src/index.html">MediaSynergy</a>
         </div>
         <div class="flex-none">
           <div class="dropdown dropdown-end">
@@ -75,6 +75,7 @@
                   </div>
                 </div>
                 <div class="btn btn-neutral" onclick="document.getElementById('update-profile').style.display='block'">Update Your Profile</div>
+                <div class="btn btn-neutral" onclick="document.getElementById('publish-profile').style.display='block'">Publish Profile</div>
               </div>
             </div>
             <div class="card p-2 shadow-xl">
@@ -670,6 +671,56 @@
             </ul>
           </div>
         </div>
+
+
+        <div id="publish-profile" class="hidden z-10 fixed top-0 left-0 h-screen w-screen" style="background-color:rgba(0,0,0,.5);">
+          <div class="fixed card bg-base-100 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 min-w-[32rem] p-4 gap-4">
+            <div class="absolute right-0 top-0 p-1" onclick="document.getElementById('publish-profile').style.display='none'">
+              <img src="https://icons.veryicon.com/png/o/miscellaneous/medium-thin-linear-icon/cross-23.png" alt="" class="w-4">
+            </div>
+            <div class="card-title self-center">
+              Publish Profile
+            </div>
+            <div class="grid grid-cols-3 gap-4">
+              <div class="card btn-ghost shadow-xl p-4">
+                <div class="card-title self-center">Facebook</div>
+                <div class="card-body justify-center">
+                  <img src="https://cdn.pixabay.com/photo/2021/06/15/12/51/facebook-6338509_1280.png" alt="">
+                </div>
+              </div>
+              <div class="card btn-ghost shadow-xl p-4">
+                <div class="card-title self-center">Youtube</div>
+                <div class="card-body justify-center">
+                  <img src="https://seeklogo.com/images/Y/youtube-icon-logo-521820CDD7-seeklogo.com.png" alt="">
+                </div>
+              </div>
+              <div class="card btn-ghost shadow-xl p-4">
+                <div class="card-title self-center">Twitter</div>
+                <div class="card-body justify-center">
+                  <img src="https://logos-world.net/wp-content/uploads/2023/08/X-Logo.png" alt="">
+                </div>
+              </div>
+              <div class="card btn-ghost shadow-xl p-4">
+                <div class="card-title self-center">Instagram</div>
+                <div class="card-body justify-center">
+                  <img src="https://www.unipile.com/wp-content/uploads/2022/09/logo_instagram.png" alt="">
+                </div>
+              </div>
+              <div class="card btn-ghost shadow-xl p-4">
+                <div class="card-title self-center">Linked In</div>
+                <div class="card-body justify-center">
+                  <img src="https://pbs.twimg.com/profile_images/1661161645857710081/6WtDIesg_400x400.png" alt="">
+                </div>
+              </div>
+              <div class="card btn-ghost shadow-xl p-4">
+                <div class="card-title self-center">TikTok</div>
+                <div class="card-body justify-center">
+                  <img src="https://www.edigitalagency.com.au/wp-content/uploads/new-TikTok-logo-png-vertical-full-colour.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- Components added -->
 
       </div>
@@ -678,9 +729,9 @@
       <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
       <ul class="menu p-4 w-80 min-h-full bg-base-200 text-base-content mt-16 fixed">
         <!-- Sidebar content here -->
-        <li><a>Dashboard</a></li>
+        <li><a href="/src/index.html">Dashboard</a></li>
         <li><a>Content</a></li>
-        <li><a>Scheduling</a></li>
+        <li><a href="/src/pages/scheduling-dashboard.html">Scheduling</a></li>
         <li><a>Analytics</a></li>
         <li><a>Community</a></li>
       </ul>
