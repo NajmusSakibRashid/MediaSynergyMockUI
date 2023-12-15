@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .chart-container {
+    position: relative;
+    width: 80vw;
+    height: 60vh;
+  }
+  
