@@ -5347,6 +5347,18 @@ details.collapse summary::-webkit-details-marker {
   width: 100vw;
 }
 
+.w-\[16rem\] {
+  width: 16rem;
+}
+
+.w-\[8rem\] {
+  width: 8rem;
+}
+
+.w-\[12rem\] {
+  width: 12rem;
+}
+
 .min-w-0 {
   min-width: 0px;
 }
@@ -5483,6 +5495,14 @@ details.collapse summary::-webkit-details-marker {
 
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-16 {
+  gap: 4rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .-space-x-3 > :not([hidden]) ~ :not([hidden]) {
