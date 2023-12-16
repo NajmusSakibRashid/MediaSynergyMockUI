@@ -10,7 +10,7 @@
   <div class="drawer">
     <input id="my-drawer" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content">
-      <!-- <label for="my-drawer" class="btn btn-primary drawer-button">Open drawer</label> -->
+      <!-- <label for="my-drawer" class="btn border-primary drawer-button">Open drawer</label> -->
       <div class="navbar bg-base-300 fixed z-10">
         <div class="flex-none">
           <label for="my-drawer" class="btn btn-square btn-ghost">
@@ -47,8 +47,68 @@
               <input type="text" class="input input-bordered w-full" placeholder="Enter your title here">
               <label class="label">Products or Services:</label>
               <input type="text" class="input input-bordered w-full" placeholder="Enter related product">
-              <label for="" class="label">Target Consumer</label>
+              <label for="" class="label">Target Consumer:</label>
               <input type="text" class="input input-bordered w-full" placeholder="Enter target consumer">
+              <label for="" class="label">Description:</label>
+              <textarea class="textarea h-24 textarea-bordered w-full" placeholder="Enter description here"></textarea>
+              <label for="" class="label">Select Profile:</label>
+              <div class="grid grid-cols-3 gap-4">
+                <div class="card bg-base-100 profile border-2 border-base-100 hover:bg-base-300">
+                  <div class="card-body">
+                    <img src="https://imgscf.slidemembers.com/docs/1/1/303/startup_pitch_deck_presentation_format_302201.jpg" alt="" class="rounded-xl max-h-16">
+                    <div class="card-title text-sm">
+                      Lorem Ipsum
+                    </div>
+                    Lorem ipsum dolor sit amet, .....
+                  </div>
+                </div>
+                <div class="card bg-base-100 profile border-2 border-base-100 hover:bg-base-300">
+                  <div class="card-body">
+                    <img src="https://thumbs.dreamstime.com/b/restaurant-building-flat-design-architecture-facade-food-cafe-construction-vector-illustration-69417405.jpg" alt="" class="rounded-xl max-h-16 object-cover">
+                    <div class="card-title text-sm">
+                      Lorem Ipsum
+                    </div>
+                    Lorem ipsum dolor sit amet, .....
+                  </div>
+                </div>
+                <div class="card bg-base-100 profile border-2 border-base-100 hover:bg-base-300">
+                  <div class="card-body">
+                    <img src="https://png.pngtree.com/png-vector/20220309/ourlarge/pngtree-a-hardware-store-clip-art-store-illustration-vector-png-image_12545940.png" alt="" class="rounded-xl max-h-16 object-cover">
+                    <div class="card-title text-sm">
+                      Lorem Ipsum
+                    </div>
+                    Lorem ipsum dolor sit amet, .....
+                  </div>
+                </div>
+                <div class="card bg-base-100 profile border-2 border-base-100 hover:bg-base-300">
+                  <div class="card-body">
+                    <img src="https://img.freepik.com/free-vector/organic-flat-people-business-training-illustration_52683-59856.jpg" alt="" class="rounded-xl max-h-16 object-cover">
+                    <div class="card-title text-sm">
+                      Lorem Ipsum
+                    </div>
+                    Lorem ipsum dolor sit amet, .....
+                  </div>
+                </div>
+                <script>
+                  const profiles = document.querySelectorAll('.profile');
+                  profiles.forEach(profile => {
+                    profile.addEventListener('click', () => {
+                      if(profile.classList.contains('border-primary')) {
+                        profile.classList.remove('border-primary');
+                        profile.classList.add('border-base-100');
+                      } else {
+                        profile.classList.add('border-primary');
+                        profile.classList.remove('border-base-100');
+                      }
+                    });
+                  });
+                </script>
+              </div>
+            </div>
+            <div class="basis-1/2 flex flex-col w-full gap-2 justify-around">
+              <div class="card-title">Keywords and Media</div>
+              <img src="https://static-00.iconduck.com/assets.00/fast-food-illustration-2048x1469-7bth2szr.png" alt="">
+              <input type="file" class="file-input file-input-bordered w-full " />
               <label for="" class="label">Key Words</label>
               <input type="text" class="input input-bordered w-full" placeholder="Enter key words">
               <label for="" class="label">Key Words Suggestions:</label>
@@ -64,13 +124,6 @@
                 <div class="btn btn-neutral">Key Word 9</div>
                 <div class="btn btn-neutral">Key Word 10</div>
               </div>
-            </div>
-            <div class="basis-1/2 flex flex-col w-full gap-2 justify-around">
-              <div class="card-title">Descriptions and Media</div>
-              <img src="https://static-00.iconduck.com/assets.00/fast-food-illustration-2048x1469-7bth2szr.png" alt="">
-              <input type="file" class="file-input file-input-bordered w-full " />
-              <label for="" class="label">Description:</label>
-              <textarea class="textarea h-24 textarea-bordered w-full" placeholder="Enter description here"></textarea>
             </div>
           </div>
           <button class="btn btn-success w-full max-w-xs self-center" onclick="window.location.href='/src/pages/analytics_content.html'">Save</button>
