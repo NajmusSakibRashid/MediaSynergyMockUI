@@ -1,0 +1,302 @@
+[
+    {
+        "usecase": {
+            "name": "Profile Creation",
+            "scenario": "User creates an account on several social media marketing platform.",
+            "actors": "User, Entrepreneur",
+            "preconditions": "User is not already registered on the platform and has a valid email/phone number.",
+            "steps": [
+                "User provides necessary information for account creation on the platform",
+                "User verifies email/phone number",
+                "User sets up account details (username, password, etc.)"
+            ]
+        },
+        "testcases": [
+            {
+                "name": "Valid Account Creation",
+                "description": "Verify that a user can successfully create an account.",
+                "input": {
+                    "username": "john_doe",
+                    "email": "john@example.com",
+                    "password": "secure_password"
+                },
+                "expected": {
+                    "outcome": "Account created successfully",
+                    "status": "Active"
+                }
+            },
+            {
+                "name": "Invalid Email Verification",
+                "description": "Verify that the system handles the case where the user provides an invalid email for verification.",
+                "input": {
+                    "username": "invalid_user",
+                    "email": "invalid_email",
+                    "password": "weak_password"
+                },
+                "expected": {
+                    "outcome": "Account creation failed",
+                    "status": "Inactive"
+                }
+            }
+        ]
+    },
+    {
+        "usecase": {
+          "title": "User Account Creation",
+          "description": "A consumer creates an account on the platform using a valid email and phone number.",
+          "actors": ["Consumer"],
+          "preconditions": [
+            "The platform is accessible.",
+            "The consumer is on the account creation page."
+          ],
+          "steps": [
+            "Consumer enters valid email address and phone number.",
+            "Consumer sets a secure password.",
+            "Consumer agrees to terms and conditions.",
+            "Consumer submits the registration form."
+          ]
+        },
+        "testcases": [
+            {
+                "name": "ValidUserAccountCreation",
+                "description": "Test the successful creation of a user account using valid email, phone number, and a secure password.",
+                "input": {
+                    "email": "user@example.com",
+                    "phone": "1234567890",
+                    "password": "SecurePass123"
+                },
+                "expected": {
+                    "success": true,
+                    "message": "User account is created successfully. Consumer is redirected to the logged-in state."
+                }
+            },
+            {
+                "name": "DuplicateEmail",
+                "description": "Test if the system handles a scenario where a user tries to create an account with an email that already exists in the system.",
+                "input": {
+                    "email": "existing_user@example.com",
+                    "phone": "9876543210",
+                    "password": "NewPass456"
+                },
+                "expected": {
+                    "success": false,
+                    "message": "System displays an error message indicating that the email is already registered. User account is not created."
+                }
+            },
+            {
+                "name": "MissingPhoneNumber",
+                "description": "Test if the system handles a scenario where a user tries to create an account without providing a phone number.",
+                "input": {
+                    "email": "user@example.com",
+                    "password": "PassWithoutPhone"
+                },
+                "expected": {
+                    "success": false,
+                    "message": "System displays an error message indicating that the phone number is required. User account is not created."
+                }
+            },
+            {
+                "name": "TermsAndConditionsAgreement",
+                "description": "Test if the system requires users to agree to terms and conditions during account creation.",
+                "input": {
+                    "email": "user@example.com",
+                    "phone": "7890123456",
+                    "password": "StrongPass789",
+                    "agreeToTerms": false
+                },
+                "expected": {
+                    "success": false,
+                    "message": "System displays an error message indicating that terms and conditions must be agreed to. User account is not created."
+                }
+            }
+        ]
+
+    },      
+    {
+        "usecase": {
+            "name": "Content Creation and Posting",
+            "scenario": "User creates content and posts it on selected social media platforms.",
+            "actors": "User",
+            "preconditions": "User is logged in and has active social media accounts",
+            "steps": [
+                "User creates promotional content (text, image, video, etc.)",
+                "User specifies the product/service to be promoted and target audience",
+                "User schedules the content for posting (optional)",
+                "User selects social media platforms for posting",
+                "User posts the content"
+            ]
+        },
+        "testcases": [
+            {
+                "name": "Valid Content Posting",
+                "description": "Verify that a user can successfully create and post content on selected social media platforms.",
+                "input": {
+                    "content": "Check out our latest product!",
+                    "selectedPlatforms": ["Facebook", "Twitter", "Instagram", "LinkedIn"],
+                    "schedule": "Wednesday, 10:00 AM"
+                },
+                "expected": {
+                    "outcome": "Content posted successfully",
+                    "status": "Published"
+                }
+            },
+            {
+                "name": "Invalid Content Posting",
+                "description": "Verify that the system handles the case where the user tries to post invalid content or selects unsupported platforms.",
+                "input": {
+                    "content": "invalid_content",
+                    "selectedPlatforms": ["WhatsApp"],
+                    "schedule": null
+                },
+                "expected": {
+                    "outcome": "Content posting failed",
+                    "status": "Not Published"
+                }
+            }
+        ]
+    },
+    {
+        "usecase": {
+            "name": "Content Analytics",
+            "scenario": "User views analytics for their posted content on social media platforms.",
+            "actors": "User",
+            "preconditions": "User is logged in and has posted content on selected social media platforms",
+            "steps": [
+                "User navigates to the analytics section",
+                "User selects a specific content or time range",
+                "User views analytics data for engagement, reach, and interactions"
+            ]
+        },
+        "testcases": [
+            {
+                "name": "Content Analytics",
+                "description": "Verify that a user can successfully view analytics for their posted content.",
+                "input": {
+                    "selectedContent": "Post123",
+                    "timeRange": "Last 7 days"
+                },
+                "expected": {
+                    "outcome": "Content analytics retrieved successfully",
+                    "metrics": {
+                        "engagement": 1500,
+                        "reach": 5000,
+                        "interactions": 200
+                    }
+                }
+            },
+            {
+                "name": "Invalid Content Selection",
+                "description": "Verify that the system handles the case where the user selects invalid or non-existent content for analytics.",
+                "input": {
+                    "selectedContent": "InvalidPost",
+                    "timeRange": "Last 30 days"
+                },
+                "expected": {
+                    "outcome": "Content analytics retrieval failed",
+                    "error": "Invalid content selection"
+                }
+            }
+        ]
+    },
+    {
+        "usecase": {
+            "name": "Profile Analytics",
+            "scenario": "User views analytics for their social media profiles connected to the platform.",
+            "actors": "User",
+            "preconditions": "User is logged in and has connected social media accounts",
+            "steps": [
+                "User navigates to the profile analytics section",
+                "User selects a specific social media profile",
+                "User views analytics data for followers, engagement, and growth"
+            ]
+        },
+        "testcases": [
+            {
+                "name": "Profile Analytics",
+                "description": "Verify that a user can successfully view analytics for their connected social media profile.",
+                "input": {
+                    "selectedProfile": "Facebook",
+                    "timeRange": "Last month"
+                },
+                "expected": {
+                    "outcome": "Profile analytics retrieved successfully",
+                    "metrics": {
+                        "followers": 10000,
+                        "engagementRate": 5.8,
+                        "growth": 500
+                    }
+                }
+            },
+            {
+                "name": "Invalid Profile Selection",
+                "description": "Verify that the system handles the case where the user selects an invalid or non-existent social media profile for analytics.",
+                "input": {
+                    "selectedProfile": "InvalidProfile",
+                    "timeRange": "Last week"
+                },
+                "expected": {
+                    "outcome": "Profile analytics retrieval failed",
+                    "error": "Invalid profile selection"
+                }
+            }
+        ]
+    },
+    {
+        "usecase": {
+            "name": "Community Communication",
+            "scenario": "Users within the community (sellers and buyers of similar products) communicate and share information.",
+            "actors": "Seller, Buyer",
+            "preconditions": "Users are logged in and have joined the relevant community",
+            "steps": [
+                "User navigates to the community section",
+                "User selects a specific community related to their product niche",
+                "User posts a message, question, or information within the community",
+                "Other users within the community can view and respond to the post"
+            ]
+        },
+        "testcases": [
+            {
+                "name": "Valid Community Communication",
+                "description": "Verify that users can successfully communicate within the community.",
+                "input": {
+                    "selectedCommunity": "Electronics Sellers",
+                    "postContent": "Has anyone tried the new XYZ product? Share your experiences!",
+                    "responses": [
+                        "Yes, I've tried it. It works great!",
+                        "No, but I'm interested in learning more.",
+                        "I have a similar product, let's collaborate."
+                    ]
+                },
+                "expected": {
+                    "outcome": "Community communication successful",
+                    "interactionCount": 3
+                }
+            },
+            {
+                "name": "Invalid Community Selection",
+                "description": "Verify that the system handles the case where a user tries to communicate in an invalid or non-existent community.",
+                "input": {
+                    "selectedCommunity": "InvalidCommunity",
+                    "postContent": "This is an invalid community post."
+                },
+                "expected": {
+                    "outcome": "Community communication failed",
+                    "error": "Invalid community selection"
+                }
+            },
+            {
+                "name": "Empty Post",
+                "description": "Verify that the system handles the case where a user tries to post an empty message within the community.",
+                "input": {
+                    "selectedCommunity": "Fashion Enthusiasts",
+                    "postContent": ""
+                },
+                "expected": {
+                    "outcome": "Community communication failed",
+                    "error": "Empty post content"
+                }
+            }
+        ]
+    }
+    
+]
