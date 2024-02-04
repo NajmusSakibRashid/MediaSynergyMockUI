@@ -223,8 +223,65 @@
                 }
             }
         ]
+    },
+    {
+        "usecase": {
+            "name": "Hashtag and Keyword Suggestions",
+            "scenario": "User receives suggestions for relevant hashtags and keywords to enhance the visibility and reach of their posts.",
+            "actors": "User",
+            "preconditions": "User is logged in and has created content for posting",
+            "steps": [
+                "User navigates to the hashtag and keyword suggestion section",
+                "User enters or selects the content for which they need suggestions",
+                "System provides relevant hashtag and keyword suggestions"
+            ]
+        },
+        "testcases": [
+            {
+                "name": "Valid Hashtag and Keyword Suggestions",
+                "description": "Verify that a user receives relevant hashtag and keyword suggestions for their content.",
+                "input": {
+                    "content": "Exciting Product Launch"
+                },
+                "expected": {
+                    "outcome": "Hashtag and keyword suggestions retrieved successfully",
+                    "suggestions": ["ProductLaunch", "NewProduct", "LaunchEvent"]
+                }
+            },
+            {
+                "name": "Empty Content for Suggestions",
+                "description": "Verify that the system handles the case where a user tries to get suggestions without entering any content.",
+                "input": {
+                    "content": ""
+                },
+                "expected": {
+                    "outcome": "Hashtag and keyword suggestions retrieval failed",
+                    "error": "Empty content for suggestions"
+                }
+            },
+            {
+                "name": "Content with Existing Hashtags",
+                "description": "Verify that the system handles the case where a user's content already contains hashtags, and the system suggests additional relevant hashtags.",
+                "input": {
+                    "content": "Planning for #SummerSale"
+                },
+                "expected": {
+                    "outcome": "Additional hashtag suggestions retrieved successfully",
+                    "suggestions": ["SummerDeals", "HotOffers"]
+                }
+            },
+            {
+                "name": "Content with Special Characters",
+                "description": "Verify that the system handles the case where a user's content contains special characters and suggests hashtags and keywords accordingly.",
+                "input": {
+                    "content": "Unveiling the %NewCollection% 🌟"
+                },
+                "expected": {
+                    "outcome": "Hashtag and keyword suggestions retrieved successfully",
+                    "suggestions": ["NewCollection", "FashionTrends"]
+                }
+            }
+        ]
     }
-    
-    
     
 ]
